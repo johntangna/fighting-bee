@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "详情",
+  "usingComponents": {
+    "check-box-common": "/pages/component/checkbox/ParternCheckbox",
+    "scroll-area": "/pages/component/ScrollArea",
+    "task-record": "/pages/component/taskRecord/index",
+    "empty-page": "/components/emptyPage/index"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "empty-page": "/components/emptyPage/index",
+    "authorize": "/components/Authorize",
+    "scroll-view-page": "/components/scrollViewPage/index"
+  }
+}

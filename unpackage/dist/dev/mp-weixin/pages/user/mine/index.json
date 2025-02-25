@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tab-bar": "/components/tabbar/index",
+    "authorize": "/components/Authorize",
+    "head-logo": "/components/headLogo/index",
+    "head-place-holder": "/components/headPlaceHolder/index",
+    "scroll-view-page": "/components/scrollViewPage/index"
+  }
+}

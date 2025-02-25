@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "合同管理",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tab-bar": "/components/tabbar/index",
+    "head-place-holder": "/components/headPlaceHolder/index",
+    "head-title": "/components/headTitle/index",
+    "state-header": "/pages/component/stateHeader/index"
+  }
+}

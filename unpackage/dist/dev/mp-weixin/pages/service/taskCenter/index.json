@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "任务列表",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "head-place-holder": "/components/headPlaceHolder/index",
+    "head-title": "/components/headTitle/index",
+    "state-header": "/pages/component/stateHeader/index",
+    "dead-line": "/pages/component/deadLine/index",
+    "tabbar": "/components/tabbar/index",
+    "empty-page": "/components/emptyPage/index",
+    "scroll-view-page": "/components/scrollViewPage/index",
+    "task-lists": "/pages/component/taskLists/index"
+  }
+}

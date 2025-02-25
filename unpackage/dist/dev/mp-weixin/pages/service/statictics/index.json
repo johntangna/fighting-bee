@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "任务统计",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tabbar": "/components/tabbar/index",
+    "l-echart": "/components/lime-echart/components/l-echart/l-echart",
+    "head-place-holder": "/components/headPlaceHolder/index",
+    "head-title": "/components/headTitle/index",
+    "picker-common": "/pages/component/picker/picker"
+  }
+}
