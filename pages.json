@@ -3,90 +3,36 @@
 		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [{
-		"path": "pages/service/taskCenter/index",
+		"path": "pages/home/index",
 		"style": {
-			"navigationBarTitleText": "任务列表",
+			"navigationBarTitleText": "首页",
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path" : "pages/course/index",
+		"style" : 
+		{
+			"navigationBarTitleText" : "课程",
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path" : "pages/pratice/index",
+		"style" : 
+		{
+			"navigationBarTitleText" : "练习",
 			"navigationStyle": "custom"
 		}
 	}, {
-		"path": "pages/user/mine/index",
+		"path": "pages/user/index",
 		"style": {
-			"navigationBarTitleText": "个人中心",
-			"navigationStyle": "custom"
-		}
-	}, {
-		"path": "pages/service/employeeManager/index",
-		"style": {
-			"navigationBarTitleText": "人员管理",
-			"navigationStyle": "custom"
-		}
-	}, {
-		"path": "pages/service/statictics/index",
-		"style": {
-			"navigationBarTitleText": "任务统计",
-			"navigationStyle": "custom"
-		}
-	}, {
-		"path": "pages/service/constract/index",
-		"style": {
-			"navigationBarTitleText": "合同管理",
+			"navigationBarTitleText": "我的",
 			"navigationStyle": "custom"
 		}
 	}],
 
 	"subPackages": [{
-		"root": "pages/services",
-		"name": "services",
-		"pages": [{
-				"path": "constractDetails/index",
-				"style": {
-					"navigationBarTitleText": "合同详情"
-				}
-			},
-			{
-					"path": "saveContractPayInfo/index",
-					"style": {
-						"navigationBarTitleText": "补充付款"
-					}
-				},
-			{
-				"path": "addConstract/index",
-				"style": {
-					"navigationBarTitleText": "新增合同"
-				}
-			},
-			{
-				"path": "selectRoom/index",
-				"style": {
-					"navigationBarTitleText": "选择房间"
-				}
-			},
-			{
-				"path": "distributeTask/index",
-				"style": {
-					"navigationBarTitleText": "任务指派"
-				}
-			},
-			{
-				"path": "taskDetails/index",
-				"style": {
-					"navigationBarTitleText": "详情"
-				}
-			},
-			{
-				"path": "requestHelp/index",
-				"style": {
-					"navigationBarTitleText": "拉人协助"
-				}
-			},
-			{
-				"path": "editEmployee/index",
-				"style": {
-					"navigationBarTitleText": "新增人员"
-				}
-			}
-		]
-	}, {
 		"root": "pages/users",
 		"name": "users",
 		"pages": [{

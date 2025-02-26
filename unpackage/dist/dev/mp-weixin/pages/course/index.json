@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "课程",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "tabbar": "/components/tabbar/index"
+  }
+}

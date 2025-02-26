@@ -28,69 +28,43 @@
     data() {
       return {
         name: this.$options.name,
-        page: '/pages/service/taskCenter/index',
+        page: '/pages/home/index',
         userTabbar: [{
-            name: "任务列表",
-            link: '/pages/service/taskCenter/index',
+            name: "首页",
+            link: '/pages/home/index',
             imgList: [
-              "/static/asset/蒙版(1).png",
-              "/static/asset/蒙版(8).png"
+              "/static/image/home_selected.png",
+              "/static/image/home.png"
             ]
           },
           {
-            name: "个人中心",
-            link: '/pages/user/mine/index',
+            name: "课程",
+            link: '/pages/course/index',
             imgList: [
-              "/static/asset/蒙版(6).png",
-              "/static/asset/蒙版(5).png"
-            ]
-          }
-        ],
-        serviceTabbar: [{
-            name: "任务列表",
-            link: '/pages/service/taskCenter/index',
-            imgList: [
-              "/static/asset/蒙版(1).png",
-              "/static/asset/蒙版(8).png"
+              "/static/image/course_selected.png",
+              "/static/image/course.png"
             ]
           },
-          {
-            name: "人员管理",
-            link: '/pages/service/employeeManager/index',
-            imgList: [
-              "/static/asset/蒙版(7).png",
-              "/static/asset/蒙版(4).png"
-            ]
-          },
-          {
-            name: "任务统计",
-            link: '/pages/service/statictics/index',
-            imgList: [
-              "/static/asset/蒙版(10).png",
-              "/static/asset/蒙版(2).png"
-            ]
-          },
-          {
-            name: "合同管理",
-            link: '/pages/service/constract/index',
-            imgList: [
-              "/static/asset/蒙版(9).png",
-              "/static/asset/蒙版(3).png"
-            ]
-          },
-          {
-            name: "个人中心",
-            link: '/pages/user/mine/index',
-            imgList: [
-              "/static/asset/蒙版(6).png",
-              "/static/asset/蒙版(5).png"
-            ]
-          }
+					{
+					  name: "练习",
+					  link: '/pages/course/index',
+					  imgList: [
+					    "/static/image/pratice_selected.png",
+					    "/static/image/pratice.png"
+					  ]
+					},
+					{
+					  name: "我的",
+					  link: '/pages/user/index',
+					  imgList: [
+					    "/static/image/mine_selected.png",
+					    "/static/image/mine.png"
+					  ]
+					}
         ],
         delta: 0, //使用key强制刷新页面
       };
     },
-    computed: mapGetters(['isAdmin']),
     created() {
 
     },
@@ -102,8 +76,7 @@
     },
     methods: {
       changeTab(index, item) {
-        let result
-        this.isAdmin ? result = this.serviceTabbar : result = this.userTabbar
+        let result = this.userTabbar
         this.page = result.find((item, itemIndex) => itemIndex == index).link;
         // 这里使用reLaunch关闭所有的页面，打开新的栏目页面
         uni.reLaunch({

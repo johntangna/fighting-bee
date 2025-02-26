@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "新增合同",
-  "usingComponents": {
-    "uni-datetime-picker": "/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker",
-    "uni-file-picker": "/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker",
-    "qianziyu-select": "/components/qianziyu-select/qianziyu-select"
-  }
-}

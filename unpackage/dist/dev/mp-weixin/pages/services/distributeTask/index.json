@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "任务指派",
-  "usingComponents": {
-    "uni-datetime-picker": "/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker",
-    "head-logo": "/components/headLogo/index",
-    "picker-common": "/pages/component/picker/picker",
-    "check-box-common": "/pages/component/checkbox/ParternCheckbox"
-  }
-}

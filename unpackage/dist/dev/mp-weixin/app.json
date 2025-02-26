@@ -1,26 +1,11 @@
 {
   "pages": [
-    "pages/service/taskCenter/index",
-    "pages/user/mine/index",
-    "pages/service/employeeManager/index",
-    "pages/service/statictics/index",
-    "pages/service/constract/index"
+    "pages/home/index",
+    "pages/course/index",
+    "pages/pratice/index",
+    "pages/user/index"
   ],
   "subPackages": [
-    {
-      "root": "pages/services",
-      "pages": [
-        "constractDetails/index",
-        "saveContractPayInfo/index",
-        "addConstract/index",
-        "selectRoom/index",
-        "distributeTask/index",
-        "taskDetails/index",
-        "requestHelp/index",
-        "editEmployee/index"
-      ],
-      "name": "services"
-    },
     {
       "root": "pages/users",
       "pages": [
