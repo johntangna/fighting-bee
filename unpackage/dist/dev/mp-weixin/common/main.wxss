@@ -459,7 +459,7 @@ checkbox[aria-disabled="true"][value="false"] .wx-checkbox-input {
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #f4f6fa;
+  background-color: #f8f9fa;
   -webkit-animation: bounceInLeft 0.2s linear both;
           animation: bounceInLeft 0.2s linear both;
 }

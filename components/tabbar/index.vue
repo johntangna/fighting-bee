@@ -47,7 +47,7 @@
           },
 					{
 					  name: "练习",
-					  link: '/pages/course/index',
+					  link: '/pages/pratice/index',
 					  imgList: [
 					    "/static/image/pratice_selected.png",
 					    "/static/image/pratice.png"
@@ -133,7 +133,6 @@
       image {
         width: 100%;
         height: 100%;
-        border-radius: 50%;
       }
 
       .tabActive {
@@ -147,7 +146,7 @@
       font-weight: 600;
 
       &.active {
-        color: #333;
+        color: $main-theme-bg-color;
       }
     }
   }

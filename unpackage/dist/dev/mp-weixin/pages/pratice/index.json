@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "练习",
   "navigationStyle": "custom",
-  "usingComponents": {}
+  "usingComponents": {
+    "tabbar": "/components/tabbar/index"
+  }
 }

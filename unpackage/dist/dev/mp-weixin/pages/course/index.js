@@ -141,7 +141,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var Tabbar = function Tabbar() {
   Promise.all(/*! require.ensure | components/tabbar/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/tabbar/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 261));
+    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 267));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

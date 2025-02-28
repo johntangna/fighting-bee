@@ -1,13 +1,16 @@
 <template>
 	<view>
-
+		<Tabbar :pagePath="'/pages/pratice/index'"></Tabbar>
 	</view>
 </template>
 
 <script>
+	import Tabbar from "@/components/tabbar/index.vue"
 	export default {
 		name: "",
-		components: {},
+		components: {
+			Tabbar
+		},
 		props: {},
 		computed: {},
 		watch: {

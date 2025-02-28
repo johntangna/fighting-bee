@@ -100,11 +100,8 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
-    uniPopup: function () {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 219))
-    },
-    uniIcons: function () {
-      return Promise.all(/*! import() | uni_modules/uni-icons/components/uni-icons/uni-icons */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-icons/components/uni-icons/uni-icons")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-icons/components/uni-icons/uni-icons.vue */ 226))
+    uniEasyinput: function () {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 474))
     },
   }
 } catch (e) {
@@ -170,57 +167,26 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 30));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 32));
-var _dictionary = __webpack_require__(/*! @/api/dictionary.js */ 44);
 var _vuex = __webpack_require__(/*! vuex */ 35);
 var HeadPlaceHolder = function HeadPlaceHolder() {
   __webpack_require__.e(/*! require.ensure | components/headPlaceHolder/index */ "components/headPlaceHolder/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/headPlaceHolder/index.vue */ 234));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var HeadTitle = function HeadTitle() {
-  __webpack_require__.e(/*! require.ensure | components/headTitle/index */ "components/headTitle/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/headTitle/index.vue */ 241));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var StateHeader = function StateHeader() {
-  __webpack_require__.e(/*! require.ensure | pages/component/stateHeader/index */ "pages/component/stateHeader/index").then((function () {
-    return resolve(__webpack_require__(/*! @/pages/component/stateHeader/index.vue */ 246));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var DeadLine = function DeadLine() {
-  Promise.all(/*! require.ensure | pages/component/deadLine/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/deadLine/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/pages/component/deadLine/index.vue */ 253));
+    return resolve(__webpack_require__(/*! @/components/headPlaceHolder/index.vue */ 240));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Tabbar = function Tabbar() {
   Promise.all(/*! require.ensure | components/tabbar/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/tabbar/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 261));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var EmptyPage = function EmptyPage() {
-  __webpack_require__.e(/*! require.ensure | components/emptyPage/index */ "components/emptyPage/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/emptyPage/index.vue */ 268));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
-var ScrollViewPage = function ScrollViewPage() {
-  __webpack_require__.e(/*! require.ensure | components/scrollViewPage/index */ "components/scrollViewPage/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/scrollViewPage/index.vue */ 275));
+    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 267));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var TaskLists = function TaskLists() {
   Promise.all(/*! require.ensure | pages/component/taskLists/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/taskLists/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/pages/component/taskLists/index.vue */ 280));
+    return resolve(__webpack_require__(/*! @/pages/component/taskLists/index.vue */ 286));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
   components: {
     HeadPlaceHolder: HeadPlaceHolder,
-    HeadTitle: HeadTitle,
-    StateHeader: StateHeader,
-    DeadLine: DeadLine,
     Tabbar: Tabbar,
-    EmptyPage: EmptyPage,
-    ScrollViewPage: ScrollViewPage,
     TaskLists: TaskLists
   },
   data: function data() {
@@ -230,7 +196,6 @@ var _default = {
     };
   },
   props: {},
-  computed: (0, _vuex.mapGetters)(['isLogin', 'dictionary', 'isAdmin']),
   mounted: function mounted() {
     return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
       return _regenerator.default.wrap(function _callee$(_context) {
@@ -246,10 +211,6 @@ var _default = {
   } // this.$refs.popup.open("center")
   ,
   onShow: function onShow() {
-    var _this = this;
-    (0, _dictionary.getAllDic)("task_status").then(function (res) {
-      _this.stateList = res.data[0].items;
-    });
     this.$refs.taskList.init();
   },
   methods: {
