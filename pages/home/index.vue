@@ -1,53 +1,64 @@
 <template>
-  <view class="container_mini">
-    <view class="whiteBg container_mini_header">
+	<view class="container_mini">
+		<view class="darkBg container_mini_header">
 			<HeadPlaceHolder></HeadPlaceHolder>
-			<view class="whiteBg uni-flex">
-			  <image src="/static/image/avatar.png" mode="aspectFit" style="width: 70px;height: 45px;"></image>
-				<image src="/static/image/text.png" mode="aspectFit" style="width: 100px;height: 45px;"></image>
+			<view class="darkBg uni-flex">
+				<image src="/static/image/new_logo.png" mode="aspectFit" style="width: 70px;height: 45px;border-radius: 20rpx;">
+				</image>
+				<image src="/static/image/文字部分-黄色.png" mode="aspectFit" style="width: 100px;height: 45px;"></image>
 			</view>
 			<view class="search_header">
-				<uni-easyinput class="search_input" suffixIcon="search" v-model="value" placeholder="右侧图标" @iconClick="iconClick"></uni-easyinput>
+				<uni-easyinput class="search_input" suffixIcon="search" v-model="value" placeholder="搜索课程" borderRadius={true}
+					width="92%" padding="30rpx 0" :styles="inputStyles" @iconClick="iconClick" suffixIconColor="rgba(255, 255, 255, 0.6)" :whiteText="true"></uni-easyinput>
 			</view>
 		</view>
-		<view class="task_list_wrapper height100">
+		<!-- <view class="task_list_wrapper height100">
 			<TaskLists ref="taskList" :stateList="stateList"></TaskLists>
-		</view>
-    <Tabbar :pagePath="'/pages/home/index'"></Tabbar>
-  </view>
+		</view> -->
+		<FightingBeeVideo></FightingBeeVideo>
+		<Tabbar :pagePath="'/pages/home/index'"></Tabbar>
+	</view>
 </template>
 
 <script>
-  import HeadPlaceHolder from "@/components/headPlaceHolder/index.vue"
+	import HeadPlaceHolder from "@/components/headPlaceHolder/index.vue"
 	import Tabbar from "@/components/tabbar/index.vue"
 	import TaskLists from "@/pages/component/taskLists/index.vue"
+	import FightingBeeVideo from "@/components/fighting-bee-video/index.vue"
 	import {
 		mapGetters
 	} from "vuex"
-  export default {
-    components: {
-      HeadPlaceHolder,
+	export default {
+		components: {
+			HeadPlaceHolder,
 			Tabbar,
-			TaskLists
-    },
-    data() {
-      return {
+			TaskLists,
+			FightingBeeVideo
+		},
+		data() {
+			return {
 				mutiState: [],
-				stateList: []
-      };
-    },
-    props: {},
-    async mounted() {
+				stateList: [],
+				inputStyles: {
+					color: "rgba(255, 255, 255, 0.6)",
+					backgroundColor: "rgba(255, 255, 255, 0.1)",
+					disableColor: '#F7F6F6',
+					borderColor: "rgba(255, 255, 255, 0.1)",
+				}
+			};
+		},
+		props: {},
+		async mounted() {
 			// this.$refs.popup.open("center")
-    },
-    onShow() {
-			
+		},
+		onShow() {
+
 			this.$refs.taskList.init()
-    },
-    methods: {
+		},
+		methods: {
 			goDistributeTask() {
 				uni.navigateTo({
-				  url: `/pages/services/distributeTask/index`
+					url: `/pages/services/distributeTask/index`
 				})
 			},
 			openDeadLine() {
@@ -57,53 +68,47 @@
 				this.$Cache.set("DEADLINE", new Date().getTime())
 				this.$refs.popup.close()
 			},
-      // 授权关闭
-      authColse: function(e) {
-        this.isShowAuth = e;
-      },
-      /**
-       * 生命周期函数--监听页面加载
-       */
-      onLoad: function(options) {
-        if (options.status) {
-          const {
-            status,
-            type
-          } = options
+			// 授权关闭
+			authColse: function(e) {
+				this.isShowAuth = e;
+			},
+			/**
+			 * 生命周期函数--监听页面加载
+			 */
+			onLoad: function(options) {
+				if (options.status) {
+					const {
+						status,
+						type
+					} = options
 
-        }
-        
-      },
+				}
+
+			},
 			getTaskList(v) {
 				this.$refs.taskList.stateOrderSearch(v)
 			},
 			getTaskListByName(v) {
 				this.$refs.taskList.search(v)
 			}
-    },
-  };
+		},
+	};
 </script>
 
 <style scoped lang="scss">
-  .task_list_wrapper {
-    padding: 32rpx;
+	.task_list_wrapper {
+		padding: 32rpx;
 
-    &>view:not(:first-child) {
-      padding: 32rpx;
-    }
+		&>view:not(:first-child) {
+			padding: 32rpx;
+		}
 
-    &>view {
-      margin-bottom: 28rpx;
-    }
-  }
-
-.search_header {
-	background-color: #4b2802;
-	height: 100rpx;
-}
-.search_input {
-	.uni-easyinput {
-	width: 80% !important;
+		&>view {
+			margin-bottom: 28rpx;
+		}
 	}
-}
+
+	.search_header {
+		background-color: #4b2802;
+	}
 </style>

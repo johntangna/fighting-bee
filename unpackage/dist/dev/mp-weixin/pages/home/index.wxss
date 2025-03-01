@@ -97,9 +97,5 @@
 }
 .search_header.data-v-71e217db {
   background-color: #4b2802;
-  height: 100rpx;
-}
-.search_input .uni-easyinput.data-v-71e217db {
-  width: 80% !important;
 }
 

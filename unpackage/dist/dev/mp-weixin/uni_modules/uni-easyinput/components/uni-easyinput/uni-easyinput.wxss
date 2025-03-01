@@ -88,6 +88,7 @@
 }
 .uni-easyinput {
   width: 100%;
+  margin: auto;
   flex: 1;
   position: relative;
   text-align: left;
@@ -196,5 +197,8 @@
 .is-disabled .uni-easyinput__placeholder-class {
   color: #d5d5d5;
   font-size: 12px;
+}
+.whiteText {
+  color: rgba(255, 255, 255, 0.6);
 }
 

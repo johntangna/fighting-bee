@@ -5,13 +5,13 @@
 				@click="onClickIcon('prefix')" size="22"></uni-icons>
 			<textarea v-if="type === 'textarea'" class="uni-easyinput__content-textarea"
 				:class="{ 'input-padding': inputBorder }" :name="name" :value="val" :placeholder="placeholder"
-				:placeholderStyle="placeholderStyle" :disabled="disabled" placeholder-class="uni-easyinput__placeholder-class"
+				:placeholderStyle="placeholderStyle" :disabled="disabled" placeholder-class="uni-easyinput__placeholder-class" :placeholder-class="whiteText ? 'whiteText' : ''"
 				:maxlength="inputMaxlength" :focus="focused" :autoHeight="autoHeight" :cursor-spacing="cursorSpacing"
 				@input="onInput" @blur="_Blur" @focus="_Focus" @confirm="onConfirm"
 				@keyboardheightchange="onkeyboardheightchange"></textarea>
 			<input v-else :type="type === 'password' ? 'text' : type" class="uni-easyinput__content-input" :style="inputStyle"
 				:name="name" :value="val" :password="!showPassword && type === 'password'" :placeholder="placeholder"
-				:placeholderStyle="placeholderStyle" placeholder-class="uni-easyinput__placeholder-class" :disabled="disabled"
+				:placeholderStyle="placeholderStyle" placeholder-class="uni-easyinput__placeholder-class" :placeholder-class="whiteText ? 'whiteText' : ''" :disabled="disabled"
 				:maxlength="inputMaxlength" :focus="focused" :confirmType="confirmType" :cursor-spacing="cursorSpacing"
 				@focus="_Focus" @blur="_Blur" @input="onInput" @confirm="onConfirm"
 				@keyboardheightchange="onkeyboardheightchange" />
@@ -22,7 +22,7 @@
 					:color="focusShow ? primaryColor : '#c0c4cc'" @click="onEyes"></uni-icons>
 			</template>
 			<template v-else-if="suffixIcon">
-				<uni-icons v-if="suffixIcon" class="content-clear-icon" :type="suffixIcon" color="#333"
+				<uni-icons v-if="suffixIcon" class="content-clear-icon" :type="suffixIcon" :color="suffixIconColor"
 					@click="onClickIcon('suffix')" size="22"></uni-icons>
 			</template>
 			<template v-else>
@@ -200,9 +200,29 @@
 					};
 				}
 			},
+			borderRadius: {
+				type: Boolean,
+				default: false
+			},
+			width: {
+				type: String,
+				default: "100%",
+			},
+			padding: {
+				type: String,
+				default: "0"
+			},
 			errorMessage: {
 				type: [String, Boolean],
 				default: ''
+			},
+			suffixIconColor: {
+				type: String,
+				default: "#333"
+			},
+			whiteText: {
+				type: Boolean,
+				default: false
 			}
 		},
 		data() {
@@ -245,7 +265,7 @@
 
 			// 处理外层样式的style
 			boxStyle() {
-				return `color:${this.inputBorder && this.msg ? '#e43d33' : this.styles.color};`;
+				return `color:${this.inputBorder && this.msg ? '#e43d33' : this.styles.color};width: ${this.width};padding: ${this.padding}`;
 			},
 			// input 内容的类和样式处理
 			inputContentClass() {
@@ -262,7 +282,8 @@
 				const borderColor = this.inputBorder && this.msg ? '#dd524d' : focusColor;
 				return obj2strStyle({
 					'border-color': borderColor || '#e5e5e5',
-					'background-color': this.disabled ? this.styles.disableColor : this.styles.backgroundColor
+					'background-color': this.disabled ? this.styles.disableColor : this.styles.backgroundColor,
+					'border-radius': this.borderRadius ? '400rpx;' : 'none',
 				});
 			},
 			// input右侧样式
@@ -470,6 +491,7 @@
 	.uni-easyinput {
 		/* #ifndef APP-NVUE */
 		width: 100%;
+		margin: auto;
 		/* #endif */
 		flex: 1;
 		position: relative;
@@ -622,5 +644,8 @@
 			color: #d5d5d5;
 			font-size: 12px;
 		}
+	}
+	.whiteText {
+		color: rgba(255, 255, 255, 0.6)
 	}
 </style>

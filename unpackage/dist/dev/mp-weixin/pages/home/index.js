@@ -101,7 +101,7 @@ var components
 try {
   components = {
     uniEasyinput: function () {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 474))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput */ "uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue */ 225))
     },
   }
 } catch (e) {
@@ -170,29 +170,41 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 var _vuex = __webpack_require__(/*! vuex */ 35);
 var HeadPlaceHolder = function HeadPlaceHolder() {
   __webpack_require__.e(/*! require.ensure | components/headPlaceHolder/index */ "components/headPlaceHolder/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/headPlaceHolder/index.vue */ 240));
+    return resolve(__webpack_require__(/*! @/components/headPlaceHolder/index.vue */ 232));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Tabbar = function Tabbar() {
   Promise.all(/*! require.ensure | components/tabbar/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/tabbar/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 267));
+    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 239));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var TaskLists = function TaskLists() {
   Promise.all(/*! require.ensure | pages/component/taskLists/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/component/taskLists/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/pages/component/taskLists/index.vue */ 286));
+    return resolve(__webpack_require__(/*! @/pages/component/taskLists/index.vue */ 246));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var FightingBeeVideo = function FightingBeeVideo() {
+  __webpack_require__.e(/*! require.ensure | components/fighting-bee-video/index */ "components/fighting-bee-video/index").then((function () {
+    return resolve(__webpack_require__(/*! @/components/fighting-bee-video/index.vue */ 522));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
   components: {
     HeadPlaceHolder: HeadPlaceHolder,
     Tabbar: Tabbar,
-    TaskLists: TaskLists
+    TaskLists: TaskLists,
+    FightingBeeVideo: FightingBeeVideo
   },
   data: function data() {
     return {
       mutiState: [],
-      stateList: []
+      stateList: [],
+      inputStyles: {
+        color: "rgba(255, 255, 255, 0.6)",
+        backgroundColor: "rgba(255, 255, 255, 0.1)",
+        disableColor: '#F7F6F6',
+        borderColor: "rgba(255, 255, 255, 0.1)"
+      }
     };
   },
   props: {},

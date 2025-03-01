@@ -157,27 +157,27 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var HeadLogo = function HeadLogo() {
   __webpack_require__.e(/*! require.ensure | components/headLogo/index */ "components/headLogo/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/headLogo/index.vue */ 294));
+    return resolve(__webpack_require__(/*! @/components/headLogo/index.vue */ 254));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var HeadPlaceHolder = function HeadPlaceHolder() {
   __webpack_require__.e(/*! require.ensure | components/headPlaceHolder/index */ "components/headPlaceHolder/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/headPlaceHolder/index.vue */ 240));
+    return resolve(__webpack_require__(/*! @/components/headPlaceHolder/index.vue */ 232));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var tabBar = function tabBar() {
   Promise.all(/*! require.ensure | components/tabbar/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/tabbar/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 267));
+    return resolve(__webpack_require__(/*! @/components/tabbar/index.vue */ 239));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var ScrollViewPage = function ScrollViewPage() {
   __webpack_require__.e(/*! require.ensure | components/scrollViewPage/index */ "components/scrollViewPage/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/scrollViewPage/index.vue */ 281));
+    return resolve(__webpack_require__(/*! @/components/scrollViewPage/index.vue */ 261));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var authorize = function authorize() {
   Promise.all(/*! require.ensure | components/Authorize */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Authorize")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/Authorize */ 301));
+    return resolve(__webpack_require__(/*! @/components/Authorize */ 266));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var app = getApp();

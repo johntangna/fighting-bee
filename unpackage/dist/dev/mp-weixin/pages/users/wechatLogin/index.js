@@ -185,7 +185,7 @@ var app = getApp();
 var statusBarHeight = uni.getSystemInfoSync().statusBarHeight + 'px';
 var routinePhone = function routinePhone() {
   __webpack_require__.e(/*! require.ensure | components/loginMobile/index */ "components/loginMobile/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/loginMobile/index.vue */ 308));
+    return resolve(__webpack_require__(/*! @/components/loginMobile/index.vue */ 273));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
