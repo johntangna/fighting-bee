@@ -146,27 +146,27 @@ var _vuex = __webpack_require__(/*! vuex */ 35);
 var _taskCenter = __webpack_require__(/*! @/api/taskCenter.js */ 251);
 var ScrollViewPage = function ScrollViewPage() {
   __webpack_require__.e(/*! require.ensure | components/scrollViewPage/index */ "components/scrollViewPage/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/scrollViewPage/index.vue */ 261));
+    return resolve(__webpack_require__(/*! @/components/scrollViewPage/index.vue */ 266));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var TaskDescDetails = function TaskDescDetails() {
   Promise.all(/*! require.ensure | components/TaskDescDetails/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/TaskDescDetails/index")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/TaskDescDetails/index.vue */ 313));
+    return resolve(__webpack_require__(/*! @/components/TaskDescDetails/index.vue */ 318));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var Input = function Input() {
   __webpack_require__.e(/*! require.ensure | components/input/index */ "components/input/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/input/index.vue */ 321));
+    return resolve(__webpack_require__(/*! @/components/input/index.vue */ 326));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var authorize = function authorize() {
   Promise.all(/*! require.ensure | components/Authorize */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/Authorize")]).then((function () {
-    return resolve(__webpack_require__(/*! @/components/Authorize */ 266));
+    return resolve(__webpack_require__(/*! @/components/Authorize */ 271));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var emptyPage = function emptyPage() {
   __webpack_require__.e(/*! require.ensure | components/emptyPage/index */ "components/emptyPage/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/emptyPage/index.vue */ 328));
+    return resolve(__webpack_require__(/*! @/components/emptyPage/index.vue */ 333));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var app = getApp();

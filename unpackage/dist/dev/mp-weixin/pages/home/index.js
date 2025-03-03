@@ -185,7 +185,7 @@ var TaskLists = function TaskLists() {
 };
 var FightingBeeVideo = function FightingBeeVideo() {
   __webpack_require__.e(/*! require.ensure | components/fighting-bee-video/index */ "components/fighting-bee-video/index").then((function () {
-    return resolve(__webpack_require__(/*! @/components/fighting-bee-video/index.vue */ 522));
+    return resolve(__webpack_require__(/*! @/components/fighting-bee-video/index.vue */ 254));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

@@ -14,7 +14,7 @@
     <!-- #endif -->
     <view class="wechat_login">
       <view class="img">
-        <image src="@/static/image/boat.png" mode="widthFix"></image>
+        <image src="@/static/image/new_logo.png" mode="widthFix"></image>
       </view>
       <view class="btn-wrapper">
         <!-- #ifdef MP -->

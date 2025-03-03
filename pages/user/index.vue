@@ -14,7 +14,7 @@
                 <!-- <view class="avatarName" @tap="getUserProfile">获取头像</view> -->
               </button>
               <!-- #endif -->
-              <view v-else style="
+              <view v-if="avatarUrl" style="
 							padding: 4rpx;
 							border-radius: 50%;
 							background: #fff;">
@@ -67,9 +67,6 @@
   } from "vuex";
   // #ifdef MP
   import authorize from '@/components/Authorize';
-  // #endif
-  // #ifdef H5
-  import Auth from '@/libs/wechat';
   // #endif
   const app = getApp();
   import Routine from '@/libs/routine';
@@ -165,8 +162,6 @@
           avatarUrl: '',
           avatar: ''
         },
-        // #ifdef H5
-        isWeixin: Auth.isWeixin(),
         //#endif
         avatarUrl: '',
         outsideUrl: ''
