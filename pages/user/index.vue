@@ -10,7 +10,7 @@
               <!-- #ifdef MP -->
 							<!-- open-type="chooseAvatar" @chooseavatar="chooseavatar" -->
               <button class="bntImg" v-if="!avatarUrl"  @click="goEdit()">
-                <image class="avatar" src='../../../static/image/f.png'></image>
+                <image class="avatar" src='../../../static/image/高清修复-1742783961999-juMPn.png'></image>
                 <!-- <view class="avatarName" @tap="getUserProfile">获取头像</view> -->
               </button>
               <!-- #endif -->
@@ -162,7 +162,6 @@
           avatarUrl: '',
           avatar: ''
         },
-        //#endif
         avatarUrl: '',
         outsideUrl: ''
       }

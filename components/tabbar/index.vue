@@ -110,7 +110,7 @@
     z-index: 9999;
     width: 100%;
     height: 126rpx;
-    height: calc(126rpx+ constant(safe-area-inset-bottom)); ///兼容 IOS<11.2/
+    height: calc(126rpx + constant(safe-area-inset-bottom)); ///兼容 IOS<11.2/
     height: calc(126rpx + env(safe-area-inset-bottom)); ///兼容 IOS>11.2/
     padding-bottom: calc(constant(safe-area-inset-bottom)); ///兼容 IOS<11.2/
     padding-bottom: calc(env(safe-area-inset-bottom)); ///兼容 IOS>11.2/
