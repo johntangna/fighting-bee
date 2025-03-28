@@ -2,7 +2,7 @@ import request from "@/utils/request.js"
 
 // 静默登陆
 export function silenceAuth(data) {
-  return request.get("wx/user/wxe0e58334b0464a4b/login", data, {
+  return request.get(`wx/login/${data.code}`, null, {
     noAuth: true
   })
 }

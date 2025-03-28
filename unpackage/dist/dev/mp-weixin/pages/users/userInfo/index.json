@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "个人中心",
-  "usingComponents": {
-    "uni-file-picker": "/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker",
-    "qianziyu-select": "/components/qianziyu-select/qianziyu-select"
-  }
-}

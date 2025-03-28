@@ -3,7 +3,7 @@ module.exports = {
   // 小程序
   // #ifdef MP
   // 基础请求链接
-  HTTP_REQUEST_URL: `https://mgc.yzzwl.com/apimgc`,
+  HTTP_REQUEST_URL: `http://localhost:8088`,
   // 登陆请求有第二个连接，暂且这么处理
   HTTP_LOGIN_URL: `https://pingchuan.yzzwl.com/apipinchuan`,
   // 图片请求头

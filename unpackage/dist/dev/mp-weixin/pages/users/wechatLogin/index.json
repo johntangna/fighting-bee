@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "账号登陆",
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "routine-phone": "/components/loginMobile/index"
-  }
-}
