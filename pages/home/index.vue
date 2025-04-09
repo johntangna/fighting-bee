@@ -15,7 +15,7 @@
 		<!-- <view class="task_list_wrapper height100">
 			<TaskLists ref="taskList" :stateList="stateList"></TaskLists>
 		</view> -->
-		<FightingBeeVideo></FightingBeeVideo>
+		<!-- <FightingBeeVideo></FightingBeeVideo> -->
 		<Tabbar :pagePath="'/pages/home/index'"></Tabbar>
 	</view>
 </template>
@@ -23,7 +23,6 @@
 <script>
 	import HeadPlaceHolder from "@/components/headPlaceHolder/index.vue"
 	import Tabbar from "@/components/tabbar/index.vue"
-	import TaskLists from "@/pages/component/taskLists/index.vue"
 	import FightingBeeVideo from "@/components/fighting-bee-video/index.vue"
 	import {
 		mapGetters
@@ -32,7 +31,6 @@
 		components: {
 			HeadPlaceHolder,
 			Tabbar,
-			TaskLists,
 			FightingBeeVideo
 		},
 		data() {

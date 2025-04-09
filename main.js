@@ -1,6 +1,5 @@
 import App from './App'
 import "./style/base.scss"
-import "./static/font/katong.css"
 import "./style/main.scss"
 import "./style/iconfont.css"
 import "./plugin/animate/animate.css"
