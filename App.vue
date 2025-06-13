@@ -101,9 +101,9 @@
 						// this.$isResolve()
 						// 如果是客服切换至客服页面，0为客户，1为客服
 						// if (this.globalData.userInfo.isAdmin == 1) {
-							uni.reLaunch({
-								url: "/pages/service/taskCenter/index"
-							})
+							// uni.reLaunch({
+							// 	url: "/pages/service/taskCenter/index"
+							// })
 						// }
 
 					})

@@ -3,9 +3,9 @@
 		<view class="darkBg container_mini_header">
 			<HeadPlaceHolder></HeadPlaceHolder>
 			<view class="darkBg uni-flex">
-				<image src="/static/image/new_logo.png" mode="aspectFit" style="width: 70px;height: 45px;border-radius: 20rpx;">
+				<image src="/static/image/未标题-1.png" mode="aspectFit" style="width: 70px;height: 45px;border-radius: 20rpx;">
 				</image>
-				<image src="/static/image/文字部分-黄色.png" mode="aspectFit" style="width: 100px;height: 45px;"></image>
+				<text class="header_title">墨铃铛教育</text>
 			</view>
 			<view class="search_header">
 				<uni-easyinput class="search_input" suffixIcon="search" v-model="value" placeholder="搜索课程" borderRadius={true}
@@ -15,7 +15,7 @@
 		<!-- <view class="task_list_wrapper height100">
 			<TaskLists ref="taskList" :stateList="stateList"></TaskLists>
 		</view> -->
-		<FightingBeeVideo></FightingBeeVideo>
+		<!-- <FightingBeeVideo></FightingBeeVideo> -->
 		<Tabbar :pagePath="'/pages/home/index'"></Tabbar>
 	</view>
 </template>
@@ -23,7 +23,6 @@
 <script>
 	import HeadPlaceHolder from "@/components/headPlaceHolder/index.vue"
 	import Tabbar from "@/components/tabbar/index.vue"
-	import TaskLists from "@/pages/component/taskLists/index.vue"
 	import FightingBeeVideo from "@/components/fighting-bee-video/index.vue"
 	import {
 		mapGetters
@@ -32,7 +31,6 @@
 		components: {
 			HeadPlaceHolder,
 			Tabbar,
-			TaskLists,
 			FightingBeeVideo
 		},
 		data() {
@@ -96,6 +94,12 @@
 </script>
 
 <style scoped lang="scss">
+	.header_title {
+		font-family: "katong";
+		font-size: 32rpx;
+		font-weight: bold;
+		color: #ffd200;
+	}
 	.task_list_wrapper {
 		padding: 32rpx;
 
